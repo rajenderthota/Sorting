@@ -30,6 +30,25 @@ Sorting algorithms implemenation in Java
         }
     }
 
+# Buble Sorting without optimization
+
+    static ArrayList<Integer> bubble_sort(ArrayList<Integer> arr) {
+        
+        for(int i=0;i<arr.size()-1;i++){
+            
+            for(int j=0;j<arr.size()-i-1;j++){
+                
+                if(arr.get(j) > arr.get(j+1)){
+                    //swap the elements..
+                    swap(arr,j,j+1);
+                }
+            }
+            
+        }
+        
+        // Write your code here.
+        return arr;
+    }
 
 # Selection Sorting
       public static void selectionSort(int[] listToSort) {

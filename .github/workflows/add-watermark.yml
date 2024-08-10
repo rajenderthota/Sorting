@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v2
       - name: Add watermark
         run: |
-          echo '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 24px; color: #ccc; opacity: 0.5; z-index: -1;">DRAFT</div>' >> README.md
+          echo '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 48px; color: #f00; opacity: 0.8; z-index: -1; text-align: center; width: 100%;">Rajender Thota</div>' >> sorting-alogorithm-properties.md

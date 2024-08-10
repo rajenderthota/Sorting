@@ -14,9 +14,8 @@
 | Introsort       | 🔵 O(n log n)     | 🔵 O(n log n)     | 🔵 O(n log n)     | 🔵 O(log n) | ❌ No        | ❌ No     | 👍 Yes      | ❌ No       |
 
 
-Shell Sort --> 🔴 O(n^2) (original gap) to O(n log^2 n) (optimized gaps) 
-
-
-Note: 🔴 indicates bad performance, 🔵 indicates good performance, 👍 indicates yes, ❌ indicates no, and 🤔 indicates depends.
+* Note: 
+  + 🔴 indicates bad performance, 🔵 indicates good performance, 👍 indicates yes, ❌ indicates no, and 🤔 indicates depends.
+  +   Shell Sort --> 🔴 O(n^2) (original gap) to O(n log^2 n) (optimized gaps) 
 
 

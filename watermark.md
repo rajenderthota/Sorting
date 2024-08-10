@@ -1,6 +1,5 @@
-<div style="position: relative; z-index: -1;">
-  <p style="font-size: 48px; color: #f00; opacity: 0.8; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 100%;">DRAFT</p>
-  <p> </p>
+<div style="position: relative; height: 100vh; display: flex; justify-content: center; align-items: center;">
+  <p style="font-size: 64px; color: #f00; opacity: 0.5; font-weight: bold; text-align: center; text-decoration: underline;">Rajender Thota</p>
 </div>
 
 # My Project

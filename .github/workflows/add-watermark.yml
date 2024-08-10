@@ -1,0 +1,16 @@
+name: Add Watermark
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  add-watermark:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Add watermark
+        run: |
+          echo '<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 24px; color: #ccc; opacity: 0.5; z-index: -1;">DRAFT</div>' >> README.md

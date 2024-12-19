@@ -2,16 +2,15 @@
 Searching algorithms implemenation in Java
 
 # Linear search
-      public static index linearSearch(int[] listToSearch, int target) {
-        int n =listToSearch.length, result=-1;
-        for(int i=0; i<n; i++){
-          if(listToSearch[i] == target){
-          result=i;
-          break;
-          }
-          }
-          return result;
+    public static int linearSearch(int[] listToSearch, int target) {
+    for (int i = 0; i < listToSearch.length; i++) {
+        if (listToSearch[i] == target) {
+            return i; // Return the index as soon as the target is found
+        }
     }
+    return -1; // Return -1 if the target is not found
+    }
+
     
 # Binary search
      public static int binarySearch(int[] sortedArray, int number, int min, int max) {

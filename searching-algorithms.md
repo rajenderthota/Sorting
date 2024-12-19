@@ -30,3 +30,39 @@ Searching algorithms implemenation in Java
             return binarySearch(sortedArray, number, mid + 1, max);
         }
     }
+
+    // Binary search function
+    public static int binarySearch(int[] arr, int target) {
+        int low = 0, high = arr.length - 1;
+
+        while (low <= high) {
+            int mid = low + (high - low) / 2; // To avoid overflow
+
+            if (arr[mid] == target) {
+                return mid; // Target found
+            } else if (arr[mid] < target) {
+                low = mid + 1; // Move to the right half
+            } else {
+                high = mid - 1; // Move to the left half
+            }
+        }
+
+        return -1; // Target not found
+    }
+
+    // Recursive binary search function
+    public static int binarySearch(int[] arr, int low, int high, int target) {
+        if (low > high) {
+            return -1; // Base case: target not found
+        }
+
+        int mid = low + (high - low) / 2; // To avoid overflow
+
+        if (arr[mid] == target) {
+            return mid; // Target found
+        } else if (arr[mid] < target) {
+            return binarySearch(arr, mid + 1, high, target); // Search in the right half
+        } else {
+            return binarySearch(arr, low, mid - 1, target); // Search in the left half
+        }
+    }
